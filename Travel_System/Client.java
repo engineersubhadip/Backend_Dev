@@ -33,6 +33,9 @@ public class Client {
 		System.out.println("-----------------------");
 		travellerDetails11.displayTravellerDetails();
 		
+		travellerDetails1.flight.departure.country = "Australia";
+		System.out.println("-----------------------");
+		travellerDetails1.displayTravellerDetails();
 	}
 
 }
