@@ -1,20 +1,26 @@
 package Practice;
 
-public class A {
-	String name;
+public class A{
+	int x;
+	int y;
 	
-	A(String name)
+	A(int x, int y)
 	{
-		this.name = name;
+		this.x = x;
+		this.y = y;
 	}
-	
 	A()
 	{
-		this("Name is yet to be set..."); // telescoping
+		this(0,0); // telescoping
+	}
+	A(A ob)
+	{
+		this.x = ob.x;
+		this.y = ob.y;
 	}
 	
-	void displayName()
+	void displayElements()
 	{
-		System.out.println("Name set is "+this.name);
+		System.out.println("X : "+this.x+" Y : "+this.y);
 	}
 }

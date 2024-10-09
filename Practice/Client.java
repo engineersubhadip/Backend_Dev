@@ -3,8 +3,12 @@ package Practice;
 public class Client {
 
 	public static void main(String[] args) {
-		A ob = new A("Subhadip Das");
+		A topLeft = new A(55,88);
 		
-		ob.displayName();
+		B rect = new B(topLeft,33, 44);
+		
+		A br = rect.setBottomRight();
+		
+		br.displayElements();
 	}
 }
