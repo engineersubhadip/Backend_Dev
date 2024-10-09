@@ -1,8 +1,20 @@
 package Practice;
 
 public class A {
-	void fun()
+	String name;
+	
+	A(String name)
 	{
-		System.out.println("Fun from A");
+		this.name = name;
+	}
+	
+	A()
+	{
+		this("Name is yet to be set..."); // telescoping
+	}
+	
+	void displayName()
+	{
+		System.out.println("Name set is "+this.name);
 	}
 }
