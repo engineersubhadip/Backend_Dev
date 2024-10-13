@@ -1,14 +1,19 @@
 package Practice;
 
 public class Client {
-
+	
+	void printName()
+	{
+		System.out.println("This is a Non Static Method PrintName");
+	}
+	
+	void invokeFun()
+	{
+		printName();
+	}
 	public static void main(String[] args) {
-		A topLeft = new A(55,88);
+		Client ob = new Client();
 		
-		B rect = new B(topLeft,33, 44);
-		
-		A br = rect.setBottomRight();
-		
-		br.displayElements();
+		ob.invokeFun();
 	}
 }
