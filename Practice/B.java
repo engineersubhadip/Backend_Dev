@@ -1,25 +1,10 @@
 package Practice;
 
-public class B {
+public class B extends A{
+	private int z;
 	
-	A topLeft;
-	int height;
-	int width;
-	
-	
-	B(A topLeft, int height, int width) // copy constructor
+	public void display()
 	{
-		A topLeftDeepCopy = new A(topLeft);
-		this.topLeft = topLeftDeepCopy;
-		this.height = height;
-		this.width = width;
-	}
-	
-	A setBottomRight()
-	{
-		A bottomRight = new A();
-		bottomRight.x = this.topLeft.x + this.width;
-		bottomRight.y = this.topLeft.y - this.height;
-		return bottomRight;
+		System.out.println("["+this.x+", "+this.y+", "+this.z+"]");
 	}
 }

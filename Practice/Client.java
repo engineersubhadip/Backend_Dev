@@ -1,19 +1,16 @@
 package Practice;
 
 public class Client {
-	
-	void printName()
-	{
-		System.out.println("This is a Non Static Method PrintName");
-	}
-	
-	void invokeFun()
-	{
-		printName();
-	}
 	public static void main(String[] args) {
-		Client ob = new Client();
+		A o1 = new A();
 		
-		ob.invokeFun();
+		A o2 = new A();
+		
+		System.out.println("Coming from O1 "+o1.piVal);
+		System.out.println("Coming from O2 "+o2.piVal);
+		
+		o1.piVal = 12.333412;
+		
+		System.out.println("Updated piVal via o1 "+o1.piVal);
 	}
 }
