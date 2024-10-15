@@ -14,6 +14,6 @@ public class Car {
 	
 	public String toString()
 	{
-		return "[ "+this.speed+" , "+this.price+" , "+this.name+" ]";
+		return "[ Speed : "+this.speed+" , Price : "+this.price+" , Name : "+this.name+" ]";
 	}
 }
