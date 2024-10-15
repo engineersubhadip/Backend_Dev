@@ -1,19 +1,5 @@
 package Best_Practice_How_To_Print_Object_;
 
-import java.util.*;
-
-class customComparator implements Comparator<Car>
-{
-	public int compare(Car car1, Car car2)
-	{
-		if (car1.speed <= car2.speed)
-		{
-			return -1;
-		}
-		return 1;
-	}
-}
-
 
 public class Client {
 	
@@ -27,6 +13,7 @@ public class Client {
 
 	
 	public static void main(String[] args) {
+		
 		Car cars[] = new Car[5];
 		
 		cars[0] = new Car(25,42,"V");
@@ -37,11 +24,6 @@ public class Client {
 		
 		printCars(cars);
 		
-		System.out.println("After Sorting --- ");
-		
-		Arrays.sort(cars, new customComparator());
-		
-		printCars(cars);
 		
 	}
 	
