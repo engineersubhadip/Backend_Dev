@@ -1,10 +1,6 @@
 package Practice;
 
 public class B extends A{
-	private int z;
+	int y = super.x;
 	
-	public void display()
-	{
-		System.out.println("["+this.x+", "+this.y+", "+this.z+"]");
-	}
 }

@@ -1,5 +1,12 @@
 package Practice;
 
 public class A{
-	final static double piVal = 3.14;
+	int x;
+	static int y;
+	
+	void display()
+	{
+		System.out.println("Non Static DM "+this.x);
+		System.out.println("Static DM "+this.y);
+	}
 }
