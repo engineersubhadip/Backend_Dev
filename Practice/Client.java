@@ -1,27 +1,17 @@
 package Practice;
 
-interface I {
-	void start();
-	void stop();
-}
+public class Client {
 
-public class Client implements I{
-	
-	public void start() {
-		System.out.println("Start method...");
-	}
-	
-	public void stop() {
-		System.out.println("Stop Method ...");
-	}
-	
-	void customFunc() {
-		System.out.println("Hello from Custom Func...");
-	}
-	
 	public static void main(String[] args) {
+		A obj = new A();
+//		obj.value = 22.43; // not allowed
+		System.out.println(obj.value);
 		
-		I ob = new Client();
-
+		B obj1 = new B();
+		System.out.println(obj1.value);
+		
+		A obj2 = new B();
+		System.out.println(obj2.value);
 	}
+
 }
