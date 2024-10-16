@@ -6,15 +6,29 @@ public class Client {
 		// TODO Auto-generated method stub
 		
 		car obj = new car();
-		obj.ms = new sonyMusicSystem();
+		obj.playSong();
+		obj.forwardSong(44);
+		
+		boseMusicSystem bobj = new boseMusicSystem();
+		obj.setMusicSystem(bobj);
 		
 		obj.playSong();
-		obj.forwardSong(23);
-		
-		obj.ms = new boseMusicSystem();
-		
-		obj.stopSong();
 		obj.pauseSong();
+		obj.stopSong();
+		
+		
+		sonyMusicSystem sobj = new sonyMusicSystem();
+		
+		obj.setMusicSystem(sobj);
+		
+		obj.forwardSong(98);
+		obj.playSong();
+		
+		ericsson eobj = new ericsson();
+		
+		obj.setMusicSystem(eobj);
+		
+		obj.playSong();
 	}
 
 }
