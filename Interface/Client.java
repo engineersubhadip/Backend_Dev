@@ -19,16 +19,16 @@ public class Client {
 		
 		sonyMusicSystem sobj = new sonyMusicSystem();
 		
-		obj.setMusicSystem(sobj);
+//		obj.setMusicSystem(sobj);
 		
-		obj.forwardSong(98);
-		obj.playSong();
+//		obj.forwardSong(98);
+//		obj.playSong();
 		
 		ericsson eobj = new ericsson();
 		
-		obj.setMusicSystem(eobj);
+//		obj.setMusicSystem(eobj);
 		
-		obj.playSong();
+//		obj.playSong();
 	}
 
 }
