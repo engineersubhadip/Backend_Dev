@@ -1,4 +1,4 @@
-package Sorting_ArrayList;
+package Sorting_ArrayList_Comparable;
 
 public class Person implements Comparable<Person>{
 	String name;

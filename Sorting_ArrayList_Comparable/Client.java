@@ -1,4 +1,4 @@
-package Sorting_ArrayList;
+package Sorting_ArrayList_Comparable;
 import java.util.*;
 
 public class Client {
