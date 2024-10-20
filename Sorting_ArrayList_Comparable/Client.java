@@ -22,12 +22,14 @@ public class Client {
 		persons.add(new Person("C",29,6438));
 		
 		System.out.println("Before Sorting ......");
+		System.out.println();
 		
 		displayEmployees(persons);
-		
+		System.out.println();
 		Collections.sort(persons);
-		
+		System.out.println();
 		System.out.println("After Sorting .......");
+		System.out.println();
 		
 		displayEmployees(persons);
 		
