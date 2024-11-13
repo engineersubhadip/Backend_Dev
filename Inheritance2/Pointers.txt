@@ -1,0 +1,33 @@
+# 1.
+
+ class A {
+ int i = 10;
+ }
+ 
+ class B extends A{
+ int i = 20;
+ }
+ 
+ class Client {
+ main() {
+ 
+ A a = new B(); -> The object of Class B should refer to the properties of Class A (Main Crux)
+ 
+ B b = new B(); -> The object of Class B should refer to the properties of Class B (Main Crux)
+ 
+ a.i -> 10
+ b.i -> 20
+
+# 2.
+
+Method Overloading :- Multiple Functions with the same name, but with different signatures
+
+Method Overriding :-
+
+class A {
+	public void audioSystem(){print("From Parent")};
+}
+
+class B extends A {
+	public void audioSystem(){print("From Child")}; // Method OverRiding
+}
