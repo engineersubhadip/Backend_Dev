@@ -1,0 +1,14 @@
+class A {
+
+	int a = 2;
+
+	public void setData() {
+		
+		int a = 3;
+		
+		print(a + " " + this.a); -> "a" refers to local value 3 and "this.a" refers to 2
+	}
+}
+
+"this" refers to the current Object. [Meaning object of Class A]
+The scope of the object will be on the Class Level NOT on the Method Level.
