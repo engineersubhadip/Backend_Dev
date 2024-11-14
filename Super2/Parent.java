@@ -7,4 +7,8 @@ public class Parent {
 	public void getData() {
 		System.out.println("Method inside parent Class");
 	}
+	
+	public Parent() {
+		System.out.println("Parent Class Constructor");
+	}
 }

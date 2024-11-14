@@ -13,4 +13,9 @@ public class Child extends Parent {
 //		Use parent getDat() inside Child Class
 		super.getData();
 	}
+	
+	public Child() {
+		super(); // Invoking the Parent Class Constructor
+		System.out.println("Inside Child Class Constructor");
+	}
 }
