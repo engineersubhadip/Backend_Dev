@@ -1,0 +1,12 @@
+1. If a variable is Final, that value cannot be changed.
+
+2. If a Class is Final, then that class cannot be inherited From.
+
+3. If a Method is Final, then that Method cannot be over-ridden.
+
+# 1
+
+Package :- Set of Classes and Interfaces.
+
+
+
