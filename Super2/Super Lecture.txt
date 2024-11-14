@@ -18,3 +18,16 @@ Class B extends A {
 
 Using "super" refers to the parent class.
 
+6. Invoke the Parent Class Constructor From the Child Class
+
+class A {
+	public A(){print"Inside Parent Constructor"};
+}
+
+class B extends A {
+	public B () {
+		super();
+		print("Inside Child Class Constructor");
+	}
+}
+
