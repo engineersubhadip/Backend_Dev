@@ -1,6 +1,8 @@
 1. Constructor is a special function, which is used to set the values of an object during its creation.
 
-2. If we do not define any Constructor, Java will invoke the default Constructor.
+2. If we do not define any Constructor, Java will invoke the implicit Constructor.
+
+2(A). If we define any of the Constructor (Default, Parameterized), Java will NOT Invoke the implicit Constructor.
 
 3. Constructor has no return type.
 
