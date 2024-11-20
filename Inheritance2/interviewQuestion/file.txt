@@ -1,0 +1,9 @@
+1. I have 3 Classes C1, C2 and C3
+
+2. C1 contains (Data member "x" and 2 methods -> multiplyBy2 and divideBy2)
+
+3. C2 contains (data member "y" and 1 method -> powerof3)
+
+4. C3 contains (data member "z" and 2 methods -> incrementBy1 and decrementBy1)
+
+5. I want to create only 1 Object of C3 and pass a value and want to get access of the all methods of all the Classes

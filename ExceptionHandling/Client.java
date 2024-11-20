@@ -3,7 +3,6 @@ package ExceptionHandling;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		try {
 			int a = 12;
@@ -11,7 +10,10 @@ public class Client {
 			int b = a/x;
 		}catch (Exception  e) {
 			System.out.println(e);
+		}finally{
+			System.out.println("This will always execute");
 		}
+		 
 	}
 
 }
