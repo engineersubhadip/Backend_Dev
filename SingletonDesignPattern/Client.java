@@ -52,6 +52,13 @@ public class Client {
 		SingletonDesign_V4 ob2 = SingletonDesign_V4.setObject();
 
 		System.out.println(ob2);
+
+		/*
+		 * What if we put the entire if statement inside the constructor and make the
+		 * constructor public and remove the setObject() altogether ? Will this work ?
+		 * 
+		 * NO, because constructor does not have a return type
+		 */
 	}
 
 }
