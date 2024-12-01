@@ -10,12 +10,16 @@ public class Client {
 
 //		We are basically running the Download Class on a seperate Thread
 
-		Thread t = new Thread(d);
+		Thread t1 = new Thread(d);
 
-		t.start();
+		t1.start();
 
 		System.out.println("I am still inside Client -> " + Thread.currentThread().getName()); // Still inside Main
 																								// Thread
+
+		Thread t2 = new Thread(d);
+
+		t2.start();
 	}
 
 }
