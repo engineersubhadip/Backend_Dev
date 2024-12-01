@@ -1,0 +1,11 @@
+Write code to achieve the following
+
+ 1. A class Client with main method that prints: I am the main class
+ 2. Client class should create a new thread and invoke code in a class called Adder.
+ 3. The Adder class should print: I am the Adder class
+ 4. Client class should create a new thread and invoke code in a class called Subtractor.
+ 5. The Subtractor class should print: I am the Subtractor class
+
+
+Important Note - 
+Use the ScalerThread class to create new threads. This is necessary for testing your code.
