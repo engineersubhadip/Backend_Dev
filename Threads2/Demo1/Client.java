@@ -9,7 +9,7 @@ public class Client {
 
 		for (int i = 1; i <= 100; i++) {
 			NumberPrinter np = new NumberPrinter(i); // Task Created
-			Thread t = new Thread(np);
+			Thread t = new Thread(np); // Thread t[i], is assigned to task np[i]
 			t.start();
 		}
 
