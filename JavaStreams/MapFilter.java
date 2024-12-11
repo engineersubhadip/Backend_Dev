@@ -15,6 +15,8 @@ public class MapFilter {
 			} else {
 				System.out.println("Odd Number");
 			}
+
+			System.out.println("Checking Out...");
 		});
 	}
 
