@@ -1,0 +1,20 @@
+Steps Reqd :-
+
+1. Identify the task that needs to be run on a seperate Thread.
+Class ArrayCreator
+
+2. Create a Class for that Task.
+
+3. Does the Job on the seperate Thread needs to return something -> YES
+
+The Thread needs to return ArrayList<Integer> containing numbers from 1 to N
+
+4. Therefore, implement the Callable Interface.
+
+5. Rest are from Client Side
+
+5.1 . Create a task 
+
+5.2 Assign the task to the ExecutorServices in return will receive a Promise
+
+5.3 Fetch the Details from the Promise
