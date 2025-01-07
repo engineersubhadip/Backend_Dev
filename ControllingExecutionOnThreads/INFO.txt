@@ -1,0 +1,12 @@
+In one thread I want to print "hi" and in another thread I want to print "bye".
+
+I want to print "hi" first and then "bye"
+
+I will use Executor Service and leverage the concept of .get().
+
+I will use task1.get() then task2.get().
+
+Meaning, even if the promise of task2 gets resolved first, we are making sure task1 gets executed first.
+
+task1.get();
+task2.get();
