@@ -1,0 +1,3 @@
+I as a developer have been given a task to write a Count class
+So that the object of this class will work perfectly in a Multi-threaded environment.
+Meaning the Client should not be worring about the locking mechanisms and all, I should implement them from my Class itself.
