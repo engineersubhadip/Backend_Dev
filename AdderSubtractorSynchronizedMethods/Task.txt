@@ -1,3 +1,6 @@
 I as a developer have been given a task to write a Count class
 So that the object of this class will work perfectly in a Multi-threaded environment.
 Meaning the Client should not be worring about the locking mechanisms and all, I should implement them from my Class itself.
+
+We need to make sure, we design incrementValue() and decrementValue() methods in such a way so that 
+multiple threads cannot access and update these methods at the same time.
