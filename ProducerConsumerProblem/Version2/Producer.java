@@ -4,24 +4,27 @@ import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 
 public class Producer implements Runnable {
-	private ArrayList<String> slots;
+	private ArrayList<Shirts> store;
 	private int maxCap;
-	private String name;
+	private Shirts shirt;
 	private Lock lock;
 
-	public Producer(ArrayList<String> slots, int maxCap, String name, Lock lock) {
-		this.slots = slots;
+	public Producer(ArrayList<Shirts> store, int maxCap, Shirts shirt, Lock lock) {
+		this.store = store;
 		this.maxCap = maxCap;
-		this.name = name;
+		this.shirt = shirt;
 		this.lock = lock;
 	}
 
 	@Override
 	public void run() {
+//		while (true) {
 		lock.lock();
-		if (this.slots.size() < maxCap) {
-			this.slots.add(this.name);
+		if (this.store.size() < maxCap) {
+			this.store.add(this.shirt);
+			System.out.println("Added to the Store. Current Stock Size " + this.store.size());
 		}
 		lock.unlock();
+//		}
 	}
 }

@@ -5,23 +5,22 @@ import java.util.concurrent.locks.Lock;
 
 public class Consumer implements Runnable {
 
-	private ArrayList<String> slots;
+	private ArrayList<Shirts> store;
 	private int maxCap;
-	private String name;
 	private Lock lock;
 
-	public Consumer(ArrayList<String> slots, int maxCap, String name, Lock lock) {
-		this.slots = slots;
+	public Consumer(ArrayList<Shirts> store, int maxCap, Lock lock) {
+		this.store = store;
 		this.maxCap = maxCap;
-		this.name = name;
 		this.lock = lock;
 	}
 
 	@Override
 	public void run() {
 		lock.lock();
-		if (this.slots.size() > 0) {
-			this.slots.removeLast();
+		if (this.store.size() > 0) {
+			this.store.removeLast();
+			System.out.println("Removed from Store. Current Stock Size " + this.store.size());
 		}
 		lock.unlock();
 	}
