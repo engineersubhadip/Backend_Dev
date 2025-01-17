@@ -1,0 +1,17 @@
+1. Identify the Task :-
+
+What single thread needs to accomplish -> Print a number
+
+2. Create a Class for the Task
+
+3. Implement the Runnable Interface
+
+4. Over-ride the Run Method and write the logic for printing a number
+
+5. In the Main do :-
+
+A. NumberPrinter np = new NumberPrinter();
+
+B. Thread t = new Thread(np);
+
+6. Start the Thread.
