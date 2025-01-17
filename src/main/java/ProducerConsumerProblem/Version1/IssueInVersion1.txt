@@ -1,0 +1,27 @@
+The issue in version 1 is :-
+Consider the case of Producers :-
+Lets say there are 4 already filled slots and 1 slot is yet to be filled.
+T1 and T2 have Producer P1 and P2.
+
+T1 got the CPU Resource :-
+T1 read "if (this.slots.size() < maxCap)" i.e. 4 < 5 : TRUE :- T1 gets inside
+
+Context switch 
+
+T2 gets the CPU Resource :-
+T2 read "if (this.slots.size() < maxCap)" i.e. 4 < 5 : TRUE :- T2 gets inside.
+
+Context swtich
+
+T1 gets the CPU Resource :-
+T1 executed "this.slots.add(this.name);" Now the array size is 5 which is equals to the max Cap.
+
+Context switch
+
+T2 gets the CPU Resource :-
+T2 executed "this.slots.add(this.name);" Now the array size is 6 which has execeeded the max Cap.
+
+So, the issue in version1 is :-
+
+1. We are allowing multiple threads concurrently inside the Critical Section. Which is causing Synchronization problem.
+

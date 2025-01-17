@@ -1,0 +1,37 @@
+Does Version 2 solves the previous problem :-
+
+Consider the Case for Producer :-
+
+Lets assume the max Cap is 5.
+Now 4 slots are already filled.
+
+T1 and T2 carring P1 and P2.
+
+T1 gets the CPU Resource :-
+T1 executes lock.lock() -> The lock is applied on the Critical section. This lock will be applied till T1 releases it. 
+
+Context Switch :-
+T2 gets the CPU Resource :-
+T2 will TRY to execute lock.lock() -> But cannot since the lock is applied and hasn't been unlocked yet.
+So, T2 will Wait.
+
+Context Switch :-
+T1 get the CPU Resource:-
+T1 will exeucte the IF statement :- TRUE. T1 will add inside the Array and the array size gets 5 == maxCap.
+T1 now releases the lock.
+
+Context Switch Happens :-
+T2 gets the CPU resource.
+T2 will execute the lock statement :- It will check the IF :- False
+So, T2 cannot add inside the Array.
+
+So, by using MUTEX Locks we are able to successfully achieve the solution for Version 1.
+
+BUT
+
+Assume there are 2 filled slots and 3 are to be filled.
+Now as per the Problem statement. We should allow 3 Concurrent Producer Threads inside the Store.
+But by using MUTEX Locks we are only allowing 1 Thread inside the Critical Section.
+
+So, if we have to allow more than 1 thread inside the Critical Section concurrently, we should go for SEMAPHORES.
+

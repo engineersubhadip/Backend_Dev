@@ -1,0 +1,24 @@
+Find below the code of a class “Point”. We intend to use the objects of this class in a HashSet.
+
+private static class Point {
+    private int x;
+    private int y;
+    public Point(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // complete the code here
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        // complete the code here
+        return 0;
+    }
+}
+
+Implement the code in “equals” and “hashcode” method appropriately to enable this.

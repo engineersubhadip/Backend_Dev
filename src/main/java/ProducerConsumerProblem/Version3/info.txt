@@ -1,0 +1,9 @@
+We are using SEMAPHORES to add concurrent threads to enter into the Store.
+
+Whenever we have shared Data Structure between multiple threads.
+Meaning multiple threads are trying to access/modify the Shared Data Structure.
+ALWAYS USE CONCURRENT VERSION OF THE DATA STRUCTURE.
+
+CRUX :-
+Using Semaphores you let concurrent Threads to enter into the Store.
+But using locks/synchronized you let them add/remove items from the Store

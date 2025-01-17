@@ -1,0 +1,8 @@
+1. Identify the task to be run on a seperate thread :-
+-----------------------------
+The task is to find the height of a BT in a seperate thread.
+
+2. Implement the task in the form of Class (TreeSizeCalculator) :-
+This class will take a BT as an input and return me the size of the tree.
+
+3. Create the task and submit the task to the Executor Service.

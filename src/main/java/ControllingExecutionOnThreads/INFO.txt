@@ -1,0 +1,5 @@
+In one thread I want to print "hi" and in another thread I want to print "bye".
+
+I want to print "hi" first and then "bye"
+
+We will make use of Semaphore to control the execution of Threads.
