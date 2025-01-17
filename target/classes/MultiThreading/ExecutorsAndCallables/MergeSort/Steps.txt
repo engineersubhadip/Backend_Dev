@@ -1,3 +1,0 @@
-1. Identifying the task :-
-
-The task is to sort the array in a seperate thread.

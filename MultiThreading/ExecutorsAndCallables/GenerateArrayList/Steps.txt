@@ -1,9 +1,0 @@
-1. Identify the task :-
-The task is to generate an ArrayList which consists of Number from 1 to Input(N) and return it.
-
-2. Implement the task in the form of Class (ArrayCreator) :-
-The class will implement Callable Interface.
-
-3. Create the task.
-
-4. Submit the task to the Executor Service.

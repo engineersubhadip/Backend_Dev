@@ -1,2 +1,0 @@
-Print numbers from 1 to 100.
-Each Number shall be printed on a separate Thread.

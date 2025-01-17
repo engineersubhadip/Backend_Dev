@@ -1,2 +1,0 @@
-Given an arraylist, in one thread find out the sum of the integers and return it.
-In another thread find the max value of the array and return it.
