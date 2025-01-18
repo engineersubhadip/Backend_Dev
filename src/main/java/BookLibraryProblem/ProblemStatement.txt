@@ -1,3 +1,38 @@
 Write Java bookshelf code where a library 	contains books, and books can be added and removed from the bookshelf.
 
 Typical use-case of Producer Consumer problem
+
+** Note ** 
+
+Why did we not use 2 types of Locks ? One for Producer and One for Consumer ?
+
+Scenario :-
+-----------------
+
+Max Store size = 4
+
+Lock l1 for Producer
+Lock l2 for Consumer
+-----------------------
+
+1.	P1 gets the CPU resource.
+	
+	P1 = ps.acquire = (ps = 3)
+	P1 takes l1 lock.
+	P1 adds book and releases l1 lock.
+	P1 = cs.release = (cs = 1)
+	
+2. 	P2 gets the CPU resource.
+	P2 = ps.acquire = (ps = 2)
+	
+3. 	C1 gets the CPU resource.
+	C1 = cs.acquire = (cs = 0)
+	
+	**** THE PROBLEM ****
+	----------------------
+	
+	Now at this point C1 is open to modify "store" by taking l2 lock
+	P2 is also open to modify "store" by taking l1 lock.
+	
+	Basically 2 threads again trying to modify the shared data concurrently at the same point of time.
+	Thus leading to instability in "store" array.
