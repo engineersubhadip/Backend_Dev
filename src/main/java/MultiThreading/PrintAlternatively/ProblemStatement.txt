@@ -1,0 +1,8 @@
+2 Threads are there :-
+
+1 Thread will print even numbers from 12 onwards
+1 Thread will print odd numbers from 13 onwards.
+
+We need to print the pattern :-
+
+12,13,14,15, .... 20
