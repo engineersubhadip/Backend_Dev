@@ -50,6 +50,8 @@ public class Client {
 				} else {
 					return 0;
 				}
+				
+//				return s1.name.compareTo(s2.name); // this is also valid for String comparison
 			}
 		});
 		
