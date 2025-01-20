@@ -2,6 +2,7 @@ package ComparableVsComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Client {
@@ -32,6 +33,31 @@ public class Client {
 		/*
 		 * Therefore to define natural ordering for an user defined data type we will use <<Comparable>>
 		 */
+		
+		/*
+		 * Now in the Future if other types of ordering comes into picture.
+		 * Lets say we want to order the Student object via their age.
+		 * We should not touch their natural ordering.
+		 * Now we should implement the Comparator Interface.
+		 */
+		
+		Collections.sort(studentList, new Comparator<Student>() {
+			public int compare (Student s1, Student s2) {
+				if (s1.age < s2.age) {
+					return -1;
+				} else if (s2.age < s1.age) {
+					return 1;
+				} else {
+					return 0;
+				}
+			}
+		});
+		
+		System.out.println("********** Changed the natural ordering of Student Object ***********");
+		
+		for (int j=0; j<studentList.size(); j++) {
+			System.out.println("id "+studentList.get(j).id+" name "+studentList.get(j).name);
+		}
 	}
 
 }
