@@ -47,6 +47,14 @@ public class Client {
 		 */
 		
 //		Version 5 is the correct singleton for MultiThreaded Environment.
+	
+//		Version 5 will suffer from Performance hit, in a MultiThreaded Env.
+//		It makes sense for the concurrent Threads to wait until the instance has been created.
+//		But once the instance has been created, it does not makes sense for the concurrent threads to wait.
+//		But since we are using synchronized keyword, all the threads will wait.
+//		Hence performance hit.
+		
+		
 	}
 
 }
