@@ -32,6 +32,7 @@ public class Client {
 //		Still we are able to create multiple objects.
 //		This is not a single ton.		*/
 		
+		/*
 //		Version 4 :-
 		
 		SingletonDesign_V4 v1 = SingletonDesign_V4.setObject();
@@ -43,6 +44,9 @@ public class Client {
 //		We are able to create only one object for multiple object references.
 //		This is single ton.
 //		But this code will not work in multi-threaded environment.
+		 */
+		
+//		Version 5 is the correct singleton for MultiThreaded Environment.
 	}
 
 }
