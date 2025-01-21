@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Singleton_Design {
 	
 	private static Singleton_Design instance;
-	public static  Lock lock = new ReentrantLock();
+	private static  Lock lock = new ReentrantLock();
 	
 	private Singleton_Design() {
 		
