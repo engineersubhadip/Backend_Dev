@@ -1,0 +1,5 @@
+I have 2 threads, t1 and t2.
+t1 is responsible for printing "Foo"
+t2 is responsible for printing "Bar"
+
+I want my output as "FooBar".
