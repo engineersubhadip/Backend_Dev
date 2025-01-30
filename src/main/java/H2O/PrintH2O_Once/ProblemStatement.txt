@@ -1,0 +1,4 @@
+I have 3 threads (t1, t2 and t3)
+t1 and t2 will print "H".
+t3 will print "O".
+Output pattern : HHO.
