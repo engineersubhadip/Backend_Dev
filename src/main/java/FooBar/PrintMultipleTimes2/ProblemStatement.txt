@@ -1,0 +1,4 @@
+I have 1 Thread which print "Foo"
+I have 1 Thread which print "Bar"
+
+I want the pattern to be "FooBarFooBar......"
