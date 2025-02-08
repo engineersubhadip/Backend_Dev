@@ -5,7 +5,7 @@ import javax.naming.directory.InvalidAttributeValueException;
 public class Client {
 
 	public static void main(String[] args) throws InvalidAttributeValueException {
-		Builder b = new Builder();
+		Builder b = Student.getBuilder();
 		b.age = 23;
 		b.email = "a123.com";
 		b.name = "";

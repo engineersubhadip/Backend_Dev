@@ -28,6 +28,10 @@ public class Student {
 		}
 		this.email = builder.email;
 	}
+	
+	public static Builder getBuilder() {
+		return new Builder();
+	}
 
 	public int getAge() {
 		return age;
