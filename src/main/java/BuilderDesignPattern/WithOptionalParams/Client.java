@@ -25,7 +25,16 @@ public class Client {
 		We are NOT getting error here, we are able to create product object. Even If we are missing out on the optional fields
 		*/
 		
+		/*
+		Product p = Product.getBuilder().setName("Hitachi").setPrice(98).setHashCode("123#45@zT").build();
+		System.out.println("Product Object: "+p);
+		System.out.println(p.getName());
+		System.out.println(p.getPrice());
+		System.out.println(p.getLocation());
+		System.out.println(p.getHashCode());
 		
+		We are NOT getting error here, we are able to create Product object, even if we are missing out on the Optional Field (Location)
+		*/
 	}
 
 }
