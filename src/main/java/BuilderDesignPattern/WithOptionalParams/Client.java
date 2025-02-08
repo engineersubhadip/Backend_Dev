@@ -18,6 +18,14 @@ public class Client {
 		System.out.println("Product Object: "+p);
 		We are getting error here, it says please enter valid name;
 		*/
+		
+		/*
+		Product p = Product.getBuilder().setName("Hitachi").setPrice(110).build();
+		System.out.println("Product Object: "+p);
+		We are NOT getting error here, we are able to create product object. Even If we are missing out on the optional fields
+		*/
+		
+		
 	}
 
 }
