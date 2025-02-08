@@ -1,18 +1,20 @@
 package BuilderDesignPattern.Version2;
 
-import javax.naming.directory.InvalidAttributeValueException;
+import BuilderDesignPattern.Version2.Student.Builder;
 
 public class Client {
 
-	public static void main(String[] args) throws InvalidAttributeValueException {
-		Builder b = Student.getBuilder();
-		b.age = 23;
-		b.email = "a123.com";
-		b.name = "";
-		b.psp = -123;
+	public static void main(String[] args) {
+//		Builder b = Student.getBuilder();
+//		b.setAge(28);
+//		
+//		Student s = new Student(b);
+//		System.out.println(s.getAge());
 		
-		Student st = new Student(b);
-		System.out.println(st.getEmail());
+		Student s = Student.getBuilder().setAge(12).build();
+		System.out.println(s);
+		System.out.println(s.getAge());
+		
 	}
 
 }
