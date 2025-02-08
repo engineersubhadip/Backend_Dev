@@ -15,7 +15,8 @@ public class Student {
 		this.psp = b.getPsp();
 	}
 	
-	public static Builder getBuilder() {
+	public static Builder getBuilder() { // Since this method is Static, it can only access STATIC attributes/methods inside of it.
+										// Therefore, the Builder Class is made STATIC.
 		return new Builder();
 	}
 	
